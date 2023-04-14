@@ -76,8 +76,7 @@ public class MattLog {
                 )
                 .loader(
                         TypeMap.class,
-                        Paths.get("").toAbsolutePath().resolve("penis.yml")
-                        //Filesystem.getDeployDirectory().toPath().resolve("config.yml")
+                        Filesystem.getDeployDirectory().toPath().resolve("config.yml")
                 )
                 .load();
     }
