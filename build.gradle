@@ -1,0 +1,46 @@
+//Don't touch this unless you want me to murder you (in minecraft)
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'mattlib'
+version '1.0.0-SNAPSHOT'
+
+publishing {
+    repositories {
+        maven {
+            credentials {
+                credentials {
+                    username = "$usr"
+                    password = "$pwd"
+                }
+            }
+
+            if(rootProject.version.endsWith('-SNAPSHOT')) {
+                url "https://repo.superyuuki.com/snapshots"
+            } else {
+                url "https://repo.superyuuki.com/releases"
+            }
+        }
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+
+    java {
+        withSourcesJar()
+    }
+
+    publishing {
+        publications {
+            "$project.name"(MavenPublication) {
+                artifactId "$project.name"
+
+                artifact jar
+            }
+        }
+
+    }
+}
