@@ -1,4 +1,4 @@
-package mattlib.util;
+package com.amihaiemil.eoyaml;
 
 import com.amihaiemil.eoyaml.BaseYamlMapping;
 import com.amihaiemil.eoyaml.Comment;

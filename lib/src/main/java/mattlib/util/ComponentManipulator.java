@@ -10,14 +10,13 @@ import com.superyuuki.yuukonfig.manipulation.Manipulator;
 import com.superyuuki.yuukonfig.manipulation.Priority;
 import com.superyuuki.yuukonfig.user.ConfComment;
 import com.superyuuki.yuukonfig.user.ConfKey;
-import mattlib.ProcessPath;
 import mattlib.internals.model.ILogFeature;
 import mattlib.internals.model.ITuneFeature;
-import mattlib.model.hardware.IComponent;
 import mattlib.model.Dirty;
 import mattlib.model.annotation.core.Conf;
 import mattlib.model.annotation.core.Log;
 import mattlib.model.annotation.core.Tune;
+import mattlib.model.hardware.IComponent;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;

@@ -1,9 +1,7 @@
-package mattlib.util;
+package com.amihaiemil.eoyaml;
 
-import com.amihaiemil.eoyaml.*;
 import com.amihaiemil.eoyaml.extensions.MergedYamlMapping;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

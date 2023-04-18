@@ -1,10 +1,7 @@
 package mattlib.util;
 
 
-import com.amihaiemil.eoyaml.Yaml;
-import com.amihaiemil.eoyaml.YamlMapping;
-import com.amihaiemil.eoyaml.YamlMappingBuilder;
-import com.amihaiemil.eoyaml.YamlNode;
+import com.amihaiemil.eoyaml.*;
 import com.superyuuki.yuukonfig.BadValueException;
 import com.superyuuki.yuukonfig.manipulation.Contextual;
 import com.superyuuki.yuukonfig.manipulation.Manipulation;
@@ -13,9 +10,7 @@ import com.superyuuki.yuukonfig.manipulation.Priority;
 import mattlib.ProcessPath;
 
 import java.lang.reflect.Type;
-import java.util.ArrayDeque;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

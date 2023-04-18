@@ -3,16 +3,13 @@ package mattlib;
 import com.superyuuki.yuukonfig.YuuKonfig;
 import com.superyuuki.yuukonfig.YuuKonfigAPI;
 import edu.wpi.first.wpilibj.Filesystem;
-import mattlib.model.hardware.IComponent;
-import mattlib.util.ComponentManipulator;
 import mattlib.internals.impl.NetworkLogFeature;
 import mattlib.internals.impl.NetworkTuneFeature;
+import mattlib.util.ComponentManipulator;
 import mattlib.util.NeoComponentManipulator;
 import mattlib.util.TypeMap;
 
-import java.io.File;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Map;
 
 public class MattLog {
@@ -29,7 +26,6 @@ public class MattLog {
                 deployPath = deployPath.resolve(subPath[i] + ".yml"); //TODO make this less garbage
             } else { //just add normally
                 deployPath = deployPath.resolve(subPath[i]);
-
             }
         }
 
